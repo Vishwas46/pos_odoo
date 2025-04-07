@@ -20,10 +20,9 @@ services:
       - DB_PASSWORD=odoo
     volumes:
       - ./odoo.conf:/etc/odoo/odoo.conf
-      - odoo-addons:/mnt/extra-addons
+      - ./custom_addons:/mnt/extra-addons
       - odoo-data:/var/lib/odoo
 
 volumes:
   odoo-db-data:
-  odoo-addons:
   odoo-data:

@@ -1,0 +1,10 @@
+<template id="custom_pos_chrome" inherit_id="point_of_sale.Chrome">
+  <xpath expr="//div[contains(@class, 'pos-logo')]" position="replace">
+    <div class="pos-logo">
+      <img t-att-src="'QuantEraAI.png'" alt="Tavlo"/>
+    </div>
+  </xpath>
+  <xpath expr="//title" position="replace">
+    <title>Tavlo POS</title>
+  </xpath>
+</template>
