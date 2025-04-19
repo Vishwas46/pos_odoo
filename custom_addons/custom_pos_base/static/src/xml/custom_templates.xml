@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="custom_pos_base_templates" xml:space="preserve">
+  <!-- inherit the POS top‐level Chrome template -->
+  <t t-inherit="point_of_sale.Chrome" t-inherit-mode="extension">
+    <!-- swap out the logo container -->
+    <xpath expr="//div[contains(@class, 'pos-logo')]" position="replace">
+      <div class="pos-logo">
+        <img t-att-src="'/custom_pos_base/static/description/QuantEraAI.png'" alt="Tavlo"/>
+      </div>
+    </xpath>
+    <!-- change the page title -->
+    <xpath expr="//title" position="replace">
+      <title>Tavlo POS</title>
+    </xpath>
+  </t>
+</templates>
